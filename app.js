@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  indentedSyntax: true, // true = .sass and false = .scss
+  indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -49,5 +49,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+if (app.get('env') === 'development') {
+  var browserSync = require('browser-sync');
+  var bs = browserSync.create().init({ logSnippet: false });
+  app.use(require('connect-browser-sync')(bs));
+}
 
 module.exports = app;

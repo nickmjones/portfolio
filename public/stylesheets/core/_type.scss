@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+$body-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+$header-font: 'Source Sans Pro', Arial, sans-serif;
+
+body {
+  font-family: $body-font;
+  color: #444;
+}
+
+p {
+  font-family: $body-font;
+  font-size: ms(0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $header-font;
+}
+
+.upcase {
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  font-size: 80%;
+  color: $colors-4;
+}

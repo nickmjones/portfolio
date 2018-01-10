@@ -1,0 +1,12 @@
+$modularscale: (
+  base: 1rem,
+  ratio: 1.2
+);
+body {
+  padding: 0;
+  margin: 0;
+  background: $colors-1;
+}
+* {
+  box-sizing: border-box;
+}

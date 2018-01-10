@@ -1,0 +1,27 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"modularscale/_modularscale.scss",
+		"modularscale/_vars.scss",
+		"modularscale/_settings.scss",
+		"modularscale/_pow.scss",
+		"modularscale/_strip-units.scss",
+		"modularscale/_sort.scss",
+		"modularscale/_round-px.scss",
+		"modularscale/_target.scss",
+		"modularscale/_function.scss",
+		"modularscale/_respond.scss",
+		"modularscale/_sugar.scss",
+		"core/_core.scss",
+		"core/_media.scss",
+		"core/_colors.scss",
+		"core/_vars.scss",
+		"core/_settings.scss",
+		"core/_type.scss",
+		"core/_containers.scss"
+	],
+	"mappings": "AiBAA,OAAO,CAAC,sEAAI;ADIZ,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;EACV,UAAU,EFPD,OAAO,GEQjB;;AACD,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAW,GACxB;;ACPD,AAAA,IAAI,CAAC;EACH,WAAW,EAJD,aAAC,EAAc,SAAS,EAAE,kBAAkB,EAAE,UAAU,EAAE,MAAM,EAAE,MAAM;EAKlF,KAAK,EAAE,IAAK,GACb;;AAED,AAAA,CAAC,CAAC;EACA,WAAW,EATD,aAAC,EAAc,SAAS,EAAE,kBAAkB,EAAE,UAAU,EAAE,MAAM,EAAE,MAAM;EAUlF,SAAS,ERGa,IAAM,GQF7B;;AAED,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,CAAC;EACrB,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,WAAW,EAfC,iBAAiB,EAAE,KAAK,EAAE,UAAU,GAgBjD;;AAED,AAAA,OAAO,CAAC;EACN,cAAc,EAAE,SAAU;EAC1B,cAAc,EAAE,OAAQ;EACxB,SAAS,EAAE,GAAI;EACf,KAAK,EHrBI,OAAO,GGsBjB;;ACzBD,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,IAAK,GACb;;AAED,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,IAAS,GACnB",
+	"names": []
+}
