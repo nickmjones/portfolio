@@ -25,7 +25,7 @@ app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
   indentedSyntax: false, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: false
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -50,10 +50,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-if (app.get('env') === 'development') {
-  var browserSync = require('browser-sync');
-  var bs = browserSync.create().init({ logSnippet: false });
-  app.use(require('connect-browser-sync')(bs));
-}
 
 module.exports = app;

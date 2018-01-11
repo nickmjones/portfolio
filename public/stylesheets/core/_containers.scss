@@ -6,3 +6,21 @@ header {
   background: #fff;
   padding: $space-xl*4;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $space-xl;
+}
+
+.card {
+  flex: 1 1 25%;
+  margin-right: $space-xl;
+  margin-bottom: $space-xl;
+  padding: $space-l;
+}
+.card:nth-child(3n) {
+  margin-right: 0;
+}
