@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|VT323');
+
 $body-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-$header-font: 'Source Sans Pro', Arial, sans-serif;
+$header-font: 'Roboto', Helvetica, Arial, sans-serif;
+$mono-font: "Lucida Console", Monaco, monospace;
 
 body {
   font-family: $body-font;
-  color: #444;
+  color: $color-black;
 }
 
 p {
@@ -15,12 +17,33 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  line-height: 1.25;
+  font-weight: 300;
   font-family: $header-font;
 }
 
-.upcase {
-  text-transform: uppercase;
-  letter-spacing: 0.07rem;
-  font-size: 80%;
-  color: $colors-4;
+h1 {
+  font-size: ms(5);
+}
+h2 {
+  font-size: ms(4);
+}
+h3 {
+  font-size: ms(3);
+}
+h4 {
+  font-size: ms(2);
+}
+h5 {
+  font-size: ms(1);
+}
+h6 {
+  font-size: ms(0);
+}
+
+.centered {
+  text-align: center;
+  color: $color-red;
+  padding: 0 $space-m;
+  margin-top: $space-xl;
 }

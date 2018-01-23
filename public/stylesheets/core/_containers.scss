@@ -1,26 +1,61 @@
-.content {
-  width: 60vw;
-}
-
-header {
-  background: #fff;
-  padding: $space-xl*4;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+.main {
+  height: 50vh;
+  background: url('/images/background.png') top center no-repeat;
+  background-size: cover;
   padding: $space-xl;
+  color: #fff;
+  text-align: center;
+  display: flex;
 }
 
-.card {
-  flex: 1 1 25%;
-  margin-right: $space-xl;
-  margin-bottom: $space-xl;
-  padding: $space-l;
+.main h1 {
+  flex: auto;
+  align-self: center;
+  font-size: 4vh;
 }
-.card:nth-child(3n) {
-  margin-right: 0;
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+  background: url('/images/me.png') center -10px no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: -64px;
+  border: 3px solid #fff;
+}
+
+.menubar {
+  background: $color-navy;
+  display: flex;
+  height: 40px;
+  padding: $space-m;
+}
+.menubar__icon {
+  flex: 1 1 0;
+  font-size: 2rem;
+  color: lighten($color-navy, 35%);
+}
+
+.gauges {
+  display: flex;
+}
+.gauges__gauge {
+  flex: 1 1 0;
+  font-size: ms(8);
+
+  dt {
+    text-align: center;
+    font-weight: bold;
+  }
+  dd {
+    text-align: center;
+    font-size: ms(-1);
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.articles {
+  padding: $space-xl;
 }

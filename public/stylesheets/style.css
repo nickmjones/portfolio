@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|VT323");
 body {
-  padding: 0;
   margin: 0;
-  background: #ECF0F1; }
+  background: #fff; }
 
 * {
   box-sizing: border-box; }
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #444; }
+  color: #444444; }
 
 p {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
@@ -18,33 +17,83 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", Arial, sans-serif; }
+  line-height: 1.25;
+  font-weight: 300;
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
-.upcase {
-  text-transform: uppercase;
-  letter-spacing: 0.07rem;
-  font-size: 80%;
-  color: #F9A03F; }
+h1 {
+  font-size: 1.61051rem; }
 
-.content {
-  width: 60vw; }
+h2 {
+  font-size: 1.4641rem; }
 
-header {
-  background: #fff;
-  padding: 80px; }
+h3 {
+  font-size: 1.331rem; }
 
-.cards {
+h4 {
+  font-size: 1.21rem; }
+
+h5 {
+  font-size: 1.1rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.centered {
+  text-align: center;
+  color: #ED6A5A;
+  padding: 0 12px;
+  margin-top: 20px; }
+
+.main {
+  height: 50vh;
+  background: url("/images/background.png") top center no-repeat;
+  background-size: cover;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  display: flex; }
+
+.main h1 {
+  flex: auto;
+  align-self: center;
+  font-size: 4vh; }
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+  background: url("/images/me.png") center -10px no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: -64px;
+  border: 3px solid #fff; }
+
+.menubar {
+  background: #545677;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  height: 40px;
+  padding: 12px; }
+
+.menubar__icon {
+  flex: 1 1 0;
+  font-size: 2rem;
+  color: #b4b5ca; }
+
+.gauges {
+  display: flex; }
+
+.gauges__gauge {
+  flex: 1 1 0;
+  font-size: 2.14359rem; }
+  .gauges__gauge dt {
+    text-align: center;
+    font-weight: bold; }
+  .gauges__gauge dd {
+    text-align: center;
+    font-size: 0.90909rem;
+    width: 100%;
+    margin: 0; }
+
+.articles {
   padding: 20px; }
-
-.card {
-  flex: 1 1 25%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 16px; }
-
-.card:nth-child(3n) {
-  margin-right: 0; }
